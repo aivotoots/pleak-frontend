@@ -19,6 +19,70 @@ body {
   margin-bottom: 0;
 }
 
+.files-list {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.files-list ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.files-list .fhead {
+  background: #f8f8f8;
+}
+.files-list li {
+  display: table;
+  width: 100%;
+}
+.files-list .col {
+  display: table-cell;
+  height: 60px;
+  padding: 10px 15px;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+.files-list .col:first-of-type {
+  width: 50%;
+}
+.files-list .group {
+  cursor: pointer;
+}
+.files-list .group .col {
+  width: 100%;
+}
+.files-list .glyphicon {
+  margin-right: 10px;
+}
+.files-list .shape {
+  position: relative;
+  top: -4px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.files-list ul ul ul .shape {
+  margin-left: 35px;
+}
+.files-list ul ul ul ul .shape {
+  margin-left: 55px;
+}
+.files-list .group:hover {
+  background: #f5f5f5;
+}
+.files-list .active {
+  background: #f5f5f5;
+}
+
+.hidden {
+  display: none;
+}
+
 .ng-fade {
   transition: 1s ease-in;
 }

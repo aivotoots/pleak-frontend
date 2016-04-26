@@ -17,7 +17,7 @@ angular.module('pleaks.files', ['ngRoute'])
   // TODO: This request is fired multiple times due to Angular mechanisms, pls fix.
   http({
     method: 'GET',
-    url: 'http://localhost:8080/pleak-backend/rest/files/'
+    url: 'http://localhost:4000/pleak-backend/rest/files/'
   }).then(function(response) {
     files = response.data.files;
     $('#filesLoading').fadeOut('slow', function() {
@@ -81,13 +81,27 @@ angular.module('pleaks.files', ['ngRoute'])
     // Delete stuff
     http({
       method: 'DELETE',
-      url: 'http://localhost:8080/pleak-backend/rest/files/' + id
+      url: 'http://localhost:4000/pleak-backend/rest/files/' + id
     }).then(function(response) {
       if (response.status === 200) {
         files.splice(getFileIndexById(id), 1);
       }
     });
   }
+
+  controller.openGroup = function(e) {
+    var target = e.currentTarget;
+    $(target).addClass("active");
+
+    if ($(target).next().hasClass("hidden")) {
+      $(target).next().removeClass("hidden");
+      $(target).find(".glyphicon").addClass("glyphicon-folder-open");
+    } else {
+      $(target).next().addClass("hidden");
+      $(target).removeClass("active");
+      $(target).find(".glyphicon").removeClass("glyphicon-folder-open");
+    }
+  };
 
   controller.isExistingFileName = function(fileName) {
     // Console error fix.
