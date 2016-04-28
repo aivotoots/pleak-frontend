@@ -1,3 +1,6 @@
+/*------------------------------------*\
+$CONTENT
+\*------------------------------------*/
 body {
   padding-top: 25px;
 }
@@ -144,10 +147,6 @@ body {
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
-}
-
 .ng-fade {
   transition: 1s ease-in;
 }
@@ -166,8 +165,38 @@ body {
   opacity: 1;
 }
 
+/*------------------------------------*\
+$BOOTSTRAP OVERWRITE
+\*------------------------------------*/
+/* Bootstrap fix */
+.has-error span {
+  color: #a94442;
+}
+.has-error label {
+  color: #a94442;
+}
+
+/* Bootstrap mod */
+.jumbotron p {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+/*------------------------------------*\
+$OTHER
+\*------------------------------------*/
+.hidden {
+  display: none;
+}
+
 .help-block {
   display: none;
+}
+
+.modal-vertical-centered {
+  transform: translate(0, 50%) !important;
+  -ms-transform: translate(0, 50%) !important; /* IE 9 */
+  -webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
 }
 
 /** http://tobiasahlin.com/spinkit/ **/
@@ -206,6 +235,9 @@ body {
   animation-delay: -1.0s;
 }
 
+/*------------------------------------*\
+$ANIMATIONS
+\*------------------------------------*/
 @-webkit-keyframes sk-bounce {
   0%, 100% { -webkit-transform: scale(0.0) }
   50% { -webkit-transform: scale(1.0) }
@@ -219,24 +251,4 @@ body {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
-}
-
-.modal-vertical-centered {
-  transform: translate(0, 50%) !important;
-  -ms-transform: translate(0, 50%) !important; /* IE 9 */
-  -webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
-}
-
-/* Bootstrap fix */
-.has-error span {
-  color: #a94442;
-}
-.has-error label {
-  color: #a94442;
-}
-
-/* Bootstrap mod */
-.jumbotron p {
-  font-weight: 100;
-  font-size: 16px;
 }
