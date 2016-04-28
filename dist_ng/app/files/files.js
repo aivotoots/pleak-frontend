@@ -102,6 +102,11 @@ angular.module('pleaks.files', ['ngRoute'])
     }
   };
 
+  controller.dropDownValue = function(e) {
+    var target = e.currentTarget;
+    $(target).parent().parent().prev().find(".value").html($(target).text());
+  };
+
   controller.isExistingFileName = function(fileName) {
     // Console error fix.
     if (files === null) return false;
