@@ -16,11 +16,11 @@ angular.module('pleaks.files', ['ngRoute'])
   // TODO: This request is fired multiple times due to Angular mechanisms, pls fix.
   http({
     method: 'GET',
-    url: root.config.backend.host + '/rest/files/'
+    url: 'http://localhost:8000/app/inc/files.json'
   }).then(function(response) {
     files = response.data.files;
     $('#filesLoading').fadeOut('slow', function() {
-      $('#filesTable').fadeIn('slow');
+      $('#filesList').fadeIn('slow');
       $('#filesNew').fadeIn('slow');
     });
 

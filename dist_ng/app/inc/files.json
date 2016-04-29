@@ -1,0 +1,108 @@
+{
+  "files": [
+    {
+      "type": "file",
+      "id": 1,
+      "title": "dasdsa.bpmn",
+      "user": null,
+      "lastModified": "05/04/2016 14:59:23",
+      "md5Hash": null,
+      "content": null,
+      "sharing": {
+        "public": false,
+        "users": [
+          {
+            "username": "user1@cyber.ee",
+            "canEdit": true
+          },
+          {
+            "username": "user2@...",
+            "canEdit": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "file",
+      "id": 2,
+      "title": "dasdsa.bpmn",
+      "user": null,
+      "lastModified": "09/04/2016 11:21:39",
+      "md5Hash": null,
+      "content": null
+    },
+    {
+      "type": "group",
+      "title": "group name",
+      "files": [
+        {
+          "type": "file",
+          "id": 3,
+          "title": "dasdsa.bpmn",
+          "user": null,
+          "lastModified": "07/04/2016 12:16:45",
+          "md5Hash": null,
+          "content": null
+        },
+        {
+          "type": "file",
+          "id": 4,
+          "title": "dasdsa.bpmn",
+          "user": null,
+          "lastModified": "07/04/2016 12:17:22",
+          "md5Hash": null,
+          "content": null
+        },
+        {
+          "type": "group",
+          "title": "subgroup name",
+          "files": [
+            {
+              "id": 7,
+              "title": "fafa2.bpmn",
+              "user": null,
+              "lastModified": "07/04/2016 12:18:58",
+              "md5Hash": null,
+              "content": null
+            },
+            {
+              "id": 8,
+              "title": "fafa2.bpmn",
+              "user": null,
+              "lastModified": "07/04/2016 12:19:02",
+              "md5Hash": null,
+              "content": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "id": 5,
+      "title": "fafa1.bpmn",
+      "user": null,
+      "lastModified": "07/04/2016 12:18:29",
+      "md5Hash": null,
+      "content": null
+    },
+    {
+      "type": "file",
+      "id": 6,
+      "title": "fafa1.bpmn",
+      "user": null,
+      "lastModified": "07/04/2016 12:17:59",
+      "md5Hash": null,
+      "content": null
+    },
+    {
+      "type": "file",
+      "id": 9,
+      "title": "fafa2.bpmn",
+      "user": null,
+      "lastModified": "07/04/2016 12:19:11",
+      "md5Hash": null,
+      "content": null
+    }
+  ]
+}
